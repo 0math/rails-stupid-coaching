@@ -1,7 +1,18 @@
 <!-- display question and answer -->
-<ul>
-  <li><%= @question %> </li>
-  <li><%= @answer %> </li>
-</ul>
+<!-- <div>
+  <ul>
+    <li><%= @question %> </li>
+    <li><%= @answer %> </li>
+  </ul>
+</div> -->
+<div id="question">
+  <p><%= @question %></p>
+  <p>- Your question</p>
+</div>
 
-<%= link_to "Back", ask_path %>
+<div id="answer">
+  <p><%= @answer %></p>
+  <p>- Your coach</p>
+</div>
+
+<span><%= link_to "Back", ask_path %></span>
